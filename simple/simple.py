@@ -12,10 +12,13 @@ def simple_list():
 
 
 def sort_list(l_dict=None):
-    print("Retornar la lista ordenada por edades --> # lo que podría agregar es que si hay dos edades iguales entonces"
-          "se mostrará primero el menor id")
+    sorted_list = sorted(l_dict, key=lambda a: a["age"])
+    print(sorted_list)
+    return sorted_list
     pass
 
 
-simple_list()
-sort_list()
+#sort_list(simple_list())
+sort_list([{'id': 1, 'age': 52}, {'id': 2, 'age': 77}, {'id': 3, 'age': 52}, {'id': 4, 'age': 52}, {'id': 5, 'age': 93}, {'id': 6, 'age': 13}, {'id': 7, 'age': 34}, {'id': 8, 'age': 52}, {'id': 9, 'age': 12}, {'id': 10, 'age': 52}])
+
+
