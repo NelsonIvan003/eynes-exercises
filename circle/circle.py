@@ -4,8 +4,7 @@ import math
 class Circle:
     def __init__(self, r):
         if r <= 0:
-            raise ValueError("Para crear el círculo, el radio debe ser mayor que cero. "
-                             f"Intentó ingresar como radio: {r}")
+            raise ValueError(f"Para crear el círculo, el radio debe ser mayor que cero. Intentó ingresar como radio: {r}")
         self.radius = r
         print(f"Has creado exitosamente un círculo de radio: {self.radius}")
 
@@ -14,7 +13,7 @@ class Circle:
 
     def set_radius(self, r):
         if r <= 0:
-            raise ValueError(f"Error al intentar modificar el círculo. El nuevo radio debe ser mayor que cero.")
+            raise ValueError("Error al intentar modificar el círculo. El nuevo radio debe ser mayor que cero.")
         self.radius = r
 
     def get_area(self):
