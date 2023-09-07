@@ -6,7 +6,6 @@ class Circle:
         if r <= 0:
             raise ValueError("Para crear el círculo, el radio debe ser mayor que cero. "
                              f"Intentó ingresar como radio: {r}")
-
         self.radius = r
         print(f"Haz creado exitosamente un círculo de radio: {self.radius}")
 
