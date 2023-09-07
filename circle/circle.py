@@ -33,14 +33,3 @@ class Circle:
         return message
 
 
-try:
-    circle_3 = Circle(5)
-    print(circle_3)
-    circle_4 = circle_3 * 7
-    print(circle_4)
-except ValueError as e3:
-    print("Error:", e3)
-
-
-
-
