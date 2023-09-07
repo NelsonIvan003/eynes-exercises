@@ -13,8 +13,3 @@ def simple_list():
 def sort_list(l_dict):
     sorted_list = sorted(l_dict, key=lambda a: a["age"])
     return sorted_list
-
-
-print(sort_list(simple_list()))
-
-
